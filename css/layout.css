@@ -1,41 +1,62 @@
+
 body {
-  width: 480px;
+  display: grid;
+  width: 960px;
+  height: 700px;
+  grid-template-columns: 48, 20px;
+  grid-template-rows: 7, 100px;
+  border: solid black 2px;
+  margin: auto;
 }
 
 div {
- text-align: center;
- margin: auto;
- background-color: #2f3c4f;
- border: black 1px solid;
+  text-align: center;
 }
 
 #a {
-  height: 75px;
-  text-align: center;
-  padding-top: 25px;
+  grid-area: 1 / 1 / 2 / 48;
+  background-color: #2f3c4f;
+
 }
 
 #b {
-  height: 150px;
-  padding-top: 60px;
+  grid-area: 2 / 1 / 7 / 10;
+  background-color: peachpuff;
 }
 
-#c, #d{
-  height: 125px;
-  padding-top: 60px;
+#c {
+  grid-area: 2 / 10 / 4 / 29;
+  background-color: palevioletred;
 }
 
-#e, #f, #g, #h {
-  height: 250px;
-  width: 240px;
-  float: left;
-  padding-top: 100px;
+#d {
+  grid-area: 2 / 29 / 4 / 48;
+  background-color: rgb(124, 139, 209);
+}
+
+#e {
+  grid-area: 4 / 10 / 6 / 20;
+  background-color: rgb(233, 218, 135);
+}
+
+#f {
+  grid-area: 4 / 20 / 6 / 29;
+  background-color: rgb(233, 150, 135);
+}
+
+#g {
+  grid-area: 4 / 29 / 6 / 38;
+  background-color: rgb(135, 210, 233);
+}
+
+#h {
+  grid-area: 4 / 38 / 6 / 48;
+  background-color: rgb(187, 171, 230);
 }
 
 #i {
-  height: 80px;
-  clear: both;
-  padding-top: 30px;
+  grid-area: 6 / 10 / 7 / 48;
+  background-color: rgb(66, 134, 64);
 }
 
 @media(min-width:768px) {
